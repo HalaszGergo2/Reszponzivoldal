@@ -1,0 +1,83 @@
+body{
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+}
+img{
+    width: 100%;
+}
+nav{
+    border: 1px solid black;
+    padding: 0;
+    background-color: lightgrey;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    margin: 0;
+    padding: 3px;
+}
+nav a{
+    text-decoration: none;
+}
+#piros{
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+.atlatszo{
+    
+    color: red;
+}
+#egyedul{
+    border: 1px solid black;
+    padding: 3px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "d d d d"
+    "n n n n"
+    "a a a a";
+    border: 1px solid black;
+    padding: 10px;
+    margin:5px;
+}
+
+header{
+    grid-area: d;
+}
+article{
+    grid-area: a;
+}
+nav{
+    grid-area: n;
+}
+
+#negyedik{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid black;
+    padding: 2px;
+}
+.gridek{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 3px;
+}
+
+@media only screen and (max-width: 800px) {
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "d"
+        "n"
+        "a";
+    }
+    nav ul{
+        grid-template-columns:1fr ;
+    }
+  }
