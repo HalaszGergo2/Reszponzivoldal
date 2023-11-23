@@ -80,4 +80,9 @@ nav{
     nav ul{
         grid-template-columns:1fr ;
     }
+    #negyedik{
+      
+        grid-template-columns: 1fr;
+      
+    }
   }
